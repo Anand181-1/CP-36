@@ -76,6 +76,7 @@ function feedDog(){
 //function to add food in stock
 function addFoods(){
   foodS++;
+  dog.addImage(sadDog);
   database.ref('/').update({
     Food:foodS
   })
